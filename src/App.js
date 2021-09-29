@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+// # Mini kalkulator
 
-function App() {
+// * Napraviti komponentu kalkulator  koja sadrzi sledece:
+//     - input polje samo za prikaz trenutnog rezultata
+//     - input number polje za unos broja
+//     - dugmice za operacije (+-*/) 
+//     - dugme za resetovanje rezultata na 0 (clear)
+
+// * Prikazati komponentu u aplikaciji
+
+// * Korisnik moze da unosi broj i bira operaciju koja se izvrsava nad starim (prethodnim rezultatom) i novim brojem klikom na dugme operacije.
+
+// * Ispod se prikazuje paragraf sa tekstom koji prikazuje korake kojima se doslo do rezultata (uraditi bez zagrada,sa zagradama je komplikovanije), tekst se takodje resetuje na prazan string kada se i rezutat resetuje (klikom na clear).
+
+// * U prilogu slika.
+
+
+
+
+
+import React from "react";
+import Form from "./components/form";
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <>
+      <Form />
+    </>
+
+
   );
 }
 
